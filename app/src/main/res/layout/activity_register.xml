@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Магазин электроники"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите логин:"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginTop="24dp"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="48dp"
+            android:layout_below="@id/textViewUsername"
+            android:layout_marginTop="8dp"
+            android:hint="Логин"/>
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите пароль:"
+            android:layout_below="@id/editTextUsername"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:layout_below="@id/textViewPassword"
+            android:layout_marginTop="8dp"
+            android:height="49dp"
+            android:hint="Пароль"/>
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите телефон:"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/textViewPhone"
+            android:layout_marginTop="8dp"
+            android:height="49dp"
+            android:hint="Телефон"/>
+
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:layout_below="@+id/buttonRegister"
+            android:layout_marginTop="24dp"/>
+    </RelativeLayout>
+</ScrollView>
